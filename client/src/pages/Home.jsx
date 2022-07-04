@@ -15,7 +15,7 @@ const Home = () => {
     .then((res) => {
       setNews(res.data.articles)
     })
-    .catch(err => console.log("An error occured")
+    .catch((err) => {console.log("An error occured")}
   }
 
   useEffect(()=>{getFeeds()}, [])
