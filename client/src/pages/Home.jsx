@@ -10,7 +10,7 @@ const Home = () => {
 
   const getFeeds = async ()=>{
     await axios.get(
-      `https://newsapi.org/v2/top-headlines?country=ng&category=health&apiKey=472d945166ef40efadf8196dff58c61b`
+      `https://saurav.tech/NewsAPI/top-headlines/category/health/gb.json`
     )
     .then((res) => {
       setNews(res.data.articles)
